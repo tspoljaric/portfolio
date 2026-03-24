@@ -1,0 +1,436 @@
+@import '../../styles.scss';
+@import '../../styles/variables.scss';
+
+.body {
+  @include flex-center;
+  flex-direction: column;
+  gap: $gap-lg;
+  overflow-x: hidden;
+
+  .header {
+    display: flex;
+    gap: $gap-xxl;
+    padding: 48px;
+
+    .flex-left {
+      @include direction-column;
+      gap: $gap-s;
+
+      .section {
+        @include direction-column;
+        gap: $gap-xxs;
+      }
+
+      .section-1 {
+        @include direction-column;
+        gap: $gap-xs;
+      }
+
+      .btn {
+        width: fit-content;
+        padding: 12px 16px;
+        border: 2px solid $accent-80;
+        border-radius: 0.5rem;
+        background-color: $white-90;
+        font-family: "Inconsolata", monospace;
+        font-size: 20px;
+        color: $black-30;
+      }
+
+      .btn:hover {
+        background-color: $accent-80;
+        color: $black;
+      }
+    }
+
+    .flex-right {
+      display: flex;
+
+      .header-img {
+        height: 30rem;
+        width: 40rem;
+        border-radius: 1rem;
+      }
+    }
+  }
+
+  .wrap-goal {
+    @include direction-center-column;
+    gap: $gap-s;
+    padding: 0px 48px;
+
+    .goal-text {
+      text-align: center;
+      width: 80%;
+    }
+  }
+
+  .wrap-wrapper {
+    display: flex;
+    gap: $gap-md;
+
+    .flex-column {
+      @include direction-column;
+      gap: $gap-md;
+      .wrap-typography {
+        display: flex;
+        align-items: end;
+        justify-content: space-between;
+        gap: $gap-xxl;
+        padding: 32px 48px;
+        background-color: $white-90;
+        border: 1px solid $accent-80;
+        border-radius: 0.5rem;
+        height: fit-content;
+
+        .flex-left {
+          @include direction-column;
+          gap: $gap-lg;
+
+          .small-gap {
+            @include direction-column;
+            gap: $gap-xxs;
+
+            .big-letters {
+              font-family: "Manrope", sans-serif;
+              font-size: 152px;
+              line-height: 152px;
+              font-weight: 600;
+            }
+
+            .typo-text {
+              font-size: 20px;
+              color: grey;
+            }
+          }
+        }
+
+        .flex-right {
+          @include direction-column;
+          gap: $gap-s;
+
+          .regular {
+            font-weight: normal;
+          }
+
+          .medium {
+            font-weight: 600;
+          }
+
+          .semibold {
+            font-weight: 800;
+          }
+        }
+      }
+
+      .podcasts-img {
+        height: 52rem;
+        width: 40rem;
+      }
+    }
+
+      .wrap-styles {
+        @include direction-column;
+        gap: $gap-md;
+        padding: 32px 48px;
+        background-color: $white-90;
+        border: 1px solid $accent-80;
+        border-radius: 0.5rem;
+
+        .wrap-style {
+          @include direction-column;
+          gap: $gap-s;
+
+          // Regular
+          .regular-1 {
+            font-size: 64px;
+            line-height: 70px;
+          }
+
+          .regular-2 {
+            font-size: 32px;
+            line-height: 40px;
+          }
+
+          .regular-3 {
+            font-size: 24px;
+            line-height: 26px;
+          }
+
+          .regular-4 {
+            font-size: 16px;
+            line-height: 24px;
+          }
+
+          .regular-5 {
+            font-size: 12px;
+            line-height: 18px;
+          }
+
+          // Medium
+          .medium-1 {
+            font-size: 64px;
+            line-height: 70px;
+            font-weight: 600;
+          }
+
+          .medium-2 {
+            font-size: 32px;
+            line-height: 40px;
+            font-weight: 600;
+          }
+
+          .medium-3 {
+            font-size: 16px;
+            line-height: 24px;
+            font-weight: 600;
+          }
+
+          // SemiBold
+          .semibold-1 {
+            font-size: 40px;
+            line-height: 48px;
+            font-weight: 800;
+          }
+
+          .semibold-2 {
+            font-size: 24px;
+            line-height: 26px;
+            font-weight: 800;
+          }
+
+          .semibold-3 {
+            font-size: 16px;
+            line-height: 24px;
+            font-weight: 800;
+          }
+
+          .semibold-4 {
+            font-size: 12px;
+            line-height: 18px;
+            font-weight: 800;
+          }
+
+          .description {
+            font-size: 14px;
+          }
+        }
+      }
+    }
+
+    .wrap-colors {
+      @include direction-column;
+      gap: $gap-s;
+      padding: 32px 48px;
+      background-color: $white-90;
+      border: 1px solid $accent-80;
+      border-radius: 0.5rem;
+      .flex-row {
+        display: flex;
+        gap: $gap-s;
+       
+        .color {
+          @include direction-column;
+          justify-content: space-between;
+          padding: 16px;
+          width: 23.5rem;
+          height: 10rem;
+          border-radius: 0.5rem;
+          box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+          .color-name-black {
+            text-transform: uppercase;
+            font-size: 18px;
+          }
+          .color-name-white {
+            text-transform: uppercase;
+            font-size: 18px;
+            color: $white;
+          }
+          .color-hex-white {
+            color: $white;
+          }
+        }
+
+        .color-1 {
+          background-color: #FF6542;
+        }
+
+        .color-2 {
+          background-color: #212121;
+        }
+
+        .color-3 {
+          background-color: #F4F3EE;
+        }
+      }
+    }
+
+    .wrap-icons {
+      @include direction-column;
+      gap: $gap-s;
+      padding: 32px 48px;
+      background-color: $white-90;
+      border: 1px solid $accent-80;
+      border-radius: 0.5rem;
+      .flex-row {
+        display: flex;
+        justify-content: space-between;
+        .section-subtitle {
+          color: grey;
+        }
+       
+      }
+      .flex-icons {
+        display: flex;
+        gap: $gap-s;
+        .icon {
+          width: 24px;
+          height: 24px;
+        }
+      }
+    }
+
+
+  .wrap-next {
+
+    .link {
+      @include align-center;
+      height: 64px;
+      color: $black;
+    }
+
+    /* Hide extra text */
+    .mask {
+      position: relative;
+      padding: 0;
+      height: 64px;
+
+      /*  Remove overflow to see how it works　:) */
+      overflow: hidden;
+    }
+
+    .link-container {
+      transition: transform 0.4s ease;
+    }
+
+    .title {
+      display: block;
+
+      /*  Set same font-size and line height  */
+      font-size: 56px;
+      line-height: 56px;
+      font-weight: 600;
+
+      transition: transform 0.4s ease;
+    }
+
+    .link-title1 {
+      transform-origin: right center;
+    }
+
+    .link-title2 {
+      transform-origin: left center;
+      transform: rotate(20deg);
+    }
+
+    .link-icon {
+      @include flex-center;
+      position: relative;
+      width: 56px;
+      height: 56px;
+      margin-left: 10px;
+
+      /*  Remove overflow to see how it works　:) */
+      overflow: hidden;
+    }
+
+    .icon {
+      display: block;
+      position: absolute;
+      transition: transform 0.4s ease;
+    }
+
+    .icon:nth-child(2) {
+      transform: translate(-60px);
+    }
+
+    /* Hover Action*/
+
+    /* Move up two texts (20px = font-size) */
+    .link:hover .link-container {
+      transform: translateY(-56px);
+    }
+
+    /* Rotate texts a little bit */
+    .link:hover .link-title1 {
+      transform: rotate(30deg);
+    }
+
+    .link:hover .link-title2 {
+      transform: rotate(0);
+    }
+
+    /* Move arrows to right */
+    .link:hover .icon:first-child {
+      transform: translate(50px);
+    }
+
+    .link:hover .icon:nth-child(2) {
+      transform: translate(0px);
+    }
+  }
+
+    .footer {
+      gap: $gap-md;
+      width: 100%;
+
+      .flex {
+        @include space-between;
+        gap: $gap-lg;
+
+        .title {
+          font-family: "Karla", sans-serif;
+          font-weight: 700;
+          font-size: 72px;
+          color: $white;
+        }
+
+        .icons {
+          display: flex;
+          gap: $gap-md;
+
+          .icon {
+            width: 30px;
+            height: 30px;
+          }
+        }
+      }
+    }
+
+  }
+
+
+
+  .accent-color {
+    color: $accent;
+  }
+
+  .style-regular {
+    font-family: "Manrope", sans-serif;
+  }
+
+  .section-title {
+    font-size: 24px;
+    color: $accent;
+  }
+
+  .section-subtitle {
+    font-size: 18px;
+    font-weight: 600;
+    text-transform: uppercase;
+  }
+
+  .style-wrap {
+    @include direction-column;
+    gap: $gap-xxs;
+  }

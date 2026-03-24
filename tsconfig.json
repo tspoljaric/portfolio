@@ -23,6 +23,9 @@
       "dom"
     ]
   },
+  "files": [
+    "src/simple-parallax-js.d.ts"
+  ],
   "angularCompilerOptions": {
     "enableI18nLegacyMessageIdFormat": false,
     "strictInjectionParameters": true,

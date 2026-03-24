@@ -1,0 +1,34 @@
+<!-- <div class="nav">
+  <a routerLinkActive="active" routerLink="/home" class="bold">TEA ŠPOLJARIĆ</a>
+  <div class="links">
+    <a routerLink="/home" fragment="work" class="link" data-text="Work">Work</a>
+    <a routerLink="/home" fragment="about" class="link" data-text="About">About</a>
+    <a routerLink="/home" fragment="connect" class="link" data-text="Connect">Connect</a>
+  </div>
+</div> -->
+
+<div class="nav">
+  <a routerLinkActive="active" routerLink="/home" class="bold">TEA ŠPOLJARIĆ</a>
+
+  <!-- Desktop Links -->
+  <div class="links">
+    <a routerLink="/home" fragment="work" class="link" data-text="Work">Work</a>
+    <a routerLink="/home" fragment="about" class="link" data-text="About">About</a>
+    <a routerLink="/home" fragment="connect" class="link" data-text="Connect">Connect</a>
+  </div>
+
+  <!-- Hamburger Icon (Mobile only) -->
+  <div class="hamburger" (click)="toggleMobileMenu()">
+    <img src="icons/menu.svg" class="icon-2" alt="Menu" />
+  </div>
+
+  <!-- Mobile Menu -->
+  <div class="mobile-menu" [class.show]="isMobileMenuOpen">
+    <a routerLink="/home" fragment="work" class="link" (click)="closeMobileMenu()">Work</a>
+    <a routerLink="/home" fragment="about" class="link" (click)="closeMobileMenu()">About</a>
+    <a routerLink="/home" fragment="connect" class="link" (click)="closeMobileMenu()">Connect</a>
+  </div>
+</div>
+
+
+

@@ -1,1 +1,131 @@
-/* You can add global styles to this file, and also import other style files */
+@import 'styles/variables'; 
+
+body {
+    margin: 0px;
+    font-family: "Inconsolata", monospace;
+    color: $black;
+    background-image: url("/images/background.jpg");
+    cursor: url("/images/cursor.png"), auto; 
+}
+
+a {
+    text-decoration: none;
+    color: $black;
+}
+
+.bold {
+    font-weight: 800;
+}
+
+h1 {
+    font-size: 88px;
+    margin: 0px;
+}
+
+h2 {
+  font-size: 48px;
+    margin: 0px;
+}
+
+h3 {
+  font-size: 32px;
+  margin: 0px;
+}
+
+h4 {
+  font-size: 24px;
+  margin: 0px; 
+}
+
+.light {
+  font-weight: normal;
+}
+
+p {
+  margin: 0px;
+}
+
+button {
+  border: 0px none;
+  background-color: inherit;
+}
+
+.main-title {
+  color: $accent;
+}
+
+.copyright {
+  color: $white;
+  font-size: 20px;
+}
+
+
+.icon {
+  width: 30px;
+  height: 30px;
+}
+
+.footer {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  background-color: $black;
+  margin-top: 128px;
+  padding: 56px 96px;
+}
+
+.divider {
+  border-bottom: 5px solid $black-30;
+  border-radius: 10px;
+  width: 350px;
+}
+
+.line {
+  border-bottom: 5px solid $white;
+  border-radius: 10px;
+  width: 350px;
+}
+
+.header-subtitle {
+  font-size: 20px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.header-text {
+  font-size: 20px;
+}
+
+
+@mixin flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin space-between {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+@mixin direction-center-column {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+@mixin direction-column {
+  display: flex;
+  flex-direction: column;
+}
+
+@mixin align-center {
+  display: flex;
+  align-items: center;
+}
+
+@mixin justify-center {
+  display: flex;
+  justify-content: center;
+}
