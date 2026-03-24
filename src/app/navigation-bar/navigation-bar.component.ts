@@ -3,9 +3,10 @@ import { ActivatedRoute, Router } from '@angular/router';
 
 
 @Component({
-  selector: 'app-navigation-bar',
-  templateUrl: './navigation-bar.component.html',
-  styleUrl: './navigation-bar.component.scss'
+    selector: 'app-navigation-bar',
+    templateUrl: './navigation-bar.component.html',
+    styleUrl: './navigation-bar.component.scss',
+    standalone: false
 })
 export class NavigationBarComponent {
   @ViewChild('work', { static: false }) workSection!: ElementRef;
